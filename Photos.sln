@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}") = "Photos", "Photos\Photos.iceproj", "{C375B70B-E876-4996-BAF3-6C59F0E1B070}"
+Project("{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}") = "Photos", "app\Photos.iceproj", "{C375B70B-E876-4996-BAF3-6C59F0E1B070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
