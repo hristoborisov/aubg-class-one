@@ -12,23 +12,20 @@
     <script src="js/everlive.all.min.js"></script>
 
     <script src="scripts/app.js"></script>
+    <script src="scripts/MainController.js"></script>
+    <script src="scripts/DetailsController.js"></script>
+    <script src="scripts/NewCityController.js"></script>
 
 </head>
 <body ng-controller="MainController">
 
-    <ion-header-bar class="bar-positive">
-      <h1 class="title">Photos</h1>
-      <div class="buttons">
-        <button class="button button-stable">Add</button>
-      </div>
-    </ion-header-bar>
 
-     <ion-content>
-        <ul class="list">
-            <li class="item" ng-repeat="city in cities">
-                {{city.Name}}
-            </li>
-        </ul>
-     </ion-content>
+    <ion-nav-bar class="nav-title-slide-ios7 bar-calm">
+          <ion-nav-back-button class="button-icon ion-arrow-left-c">
+          </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
 </body>
 </html>

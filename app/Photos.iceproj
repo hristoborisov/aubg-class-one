@@ -26,6 +26,10 @@
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
+    <Content Include="scripts\NewCityController.js" />
+    <Content Include="scripts\DetailsController.js" />
+    <Content Include="views\newCity.html" />
+    <Content Include="views\details.html" />
     <Content Include="fonts\ionicons.eot">
       <SubType>Content</SubType>
     </Content>
@@ -51,12 +55,14 @@
     <Content Include="scripts\app.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\MainController.js" />
     <Content Include="styles\ionic.min.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="styles\main.css">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="views\home.html" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
@@ -99,6 +105,7 @@
     <Folder Include="App_Resources\WP8\Tiles\" />
     <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
     <Folder Include="fonts\" />
+    <Folder Include="views\" />
     <Folder Include="styles\" />
     <Folder Include="js\" />
     <Folder Include="Plugins\" />

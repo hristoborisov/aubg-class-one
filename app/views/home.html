@@ -1,0 +1,16 @@
+<ion-view title="Cities">
+        <ion-nav-buttons side="right">
+            <!-- TODO5: Navigate to the new city state -->
+
+            <a class="button button-clear">Add</a>
+        </ion-nav-buttons>
+
+        <ion-content>
+            <ul class="list">
+                <a class="item" ui-sref="details({cityId: city.Id})" ng-repeat="city in cities">
+                   <h2>Name: {{city.Name}}</h2>
+                   <p>Population: {{city.Population}}</p>
+                </a>
+            </ul>
+      </div>
+</ion-view>

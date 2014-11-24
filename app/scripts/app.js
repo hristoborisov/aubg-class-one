@@ -1,27 +1,18 @@
-var app = angular.module("Photos", ["ionic","ngRoute"]);
+var app = angular.module("Photos", ["ionic", "ngRoute"]);
 
-var MainController = function ($scope) 
-{
-    $scope.cities = [
-      {  
-          "IsCapital":true,
-          "Name":"Sofia",
-          "Population":2000000
-      },
-      {  
-          "IsCapital":false,
-          "Name":"Blagoevgrad",
-          "Population":80000
-      },
-      {  
-          "IsCapital":false,
-          "Name":"Varna",
-          "Population":600000
-      },
-      {  
-          "IsCapital":false,
-          "Name":"Plovdiv",
-          "Population":350000
-      }
-    ];
-}
+
+app.config(function ($stateProvider, $urlRouterProvider) {
+
+    $stateProvider.state('home', {
+        url: "/home",
+        templateUrl: "views/home.html",
+        controller:"MainController"
+    }).state('details', {
+        url: "/details/:cityId",
+        templateUrl: "views/details.html",
+        controller: "DetailsController"
+    });
+    //TODO4: Register a new state called newCity, register its URL, template and Controller
+
+    $urlRouterProvider.otherwise("/home");
+});
