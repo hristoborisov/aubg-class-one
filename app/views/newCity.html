@@ -1,7 +1,18 @@
 <ion-view title="New City">
         <ion-content>
-            
-
-            <!-- TODO3: Place here an img tag and display it -->
+            <form name="newEntryForm">
+                <div>
+                    <small>City name</small>
+                    <input ng-model="city.Name" type="text" />
+                </div>
+                <div>
+                    <small>Population</small>
+                    <textarea ng-model="city.Population" type="text"></textarea>
+                </div>
+                <div>
+                    <input ng-model="cityIsCapital" type="checkbox">Is this a capital city?</input>
+                    <button class="button button-calm button-block"  ng-click="onSavePhoto(city);">Save</button>
+                </div>
+            </form>
       </div>       
 </ion-view>
