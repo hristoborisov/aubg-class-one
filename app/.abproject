@@ -5,7 +5,7 @@
   "AppIdentifier": "com.telerik.Photos",
   "DisplayName": "Photos",
   "Author": "",
-  "Description": "",
+  "Description": "Photos",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [

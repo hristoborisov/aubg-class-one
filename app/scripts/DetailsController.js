@@ -4,12 +4,14 @@ var DetailsController = function ($scope, $stateParams) {
     var el = new Everlive('dWptWt003Qfq3c0i');
     var query = new Everlive.Query();
 
-    //TODO1: Filter this query using the ID, so that you return only the result you need
+    //TODO1: Filter this query using the ID, so that you return only the result you need``
     query.expand({ "Picture": true });
+    query.where().eq("Id", cityId);
 
     var data = el.data('Cities');
     data.get(query)
         .then(function (data) {
+            $scope.city = data.result[0];
             //TODO2: Bind the result of this function to a variable and display it in details.html
         },
         function (error) {

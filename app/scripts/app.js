@@ -11,7 +11,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         url: "/details/:cityId",
         templateUrl: "views/details.html",
         controller: "DetailsController"
+    }).state('newCity', {
+        url: "/newCity",
+        templateUrl: "views/newCity.html",
+        controller: "NewCityController"
     });
+    
     //TODO4: Register a new state called newCity, register its URL, template and Controller
 
     $urlRouterProvider.otherwise("/home");
